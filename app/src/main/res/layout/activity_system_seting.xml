@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_display_and_luminance"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/title_font_color"
+                android:textSize="@dimen/font_size16"
+                android:text="@string/display_and_brightness"/>
+        </LinearLayout>
+        <View
+            style="@style/Ge_Line_V_Style"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:id="@+id/ll_date_and_time"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/title_font_color"
+                android:textSize="@dimen/font_size16"
+                android:text="@string/date_and_time"/>
+        </LinearLayout>
+        <View
+            style="@style/Ge_Line_V_Style"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:id="@+id/ll_language"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:textColor="@color/title_font_color"
+                android:textSize="@dimen/font_size16"
+                android:text="@string/select_language"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

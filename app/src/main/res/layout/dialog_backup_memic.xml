@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="165dp"
+        android:orientation="vertical"
+        android:background="@drawable/circular_bead_white_10px">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:textSize="@dimen/font_size16"
+            android:textColor="@color/four_font_color"
+            android:text="@string/please_do_not_capture"/>
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:textSize="@dimen/font_size14"
+            android:textColor="@color/dialog_content_text_color"
+            android:text="@string/please_do_not_capture_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/dialog_line_color"/>
+
+        <TextView
+            android:id="@+id/i_know"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/font_size18"
+            android:textColor="@color/circular_bead_blue"
+            android:text="@string/i_know"/>
+    </LinearLayout>
+</LinearLayout>

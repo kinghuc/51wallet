@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:background="@drawable/circular_bead_white_30px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/notice_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/notice_read"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint_text_color"
+                android:layout_toRightOf="@+id/notice_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/font_size16"
+                android:text="@string/mine_notice"/>
+
+            <TextView
+                android:id="@+id/notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint_text_color"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_size14"
+                android:text="2018-04-13"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="17dp"
+            android:textSize="@dimen/font_size16"
+            android:textColor="@color/hint_text_color"
+            android:ellipsize="end"
+            android:text="关于比特币在国内的相关发展"/>
+    </LinearLayout>
+</LinearLayout>

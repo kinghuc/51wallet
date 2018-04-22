@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.carefree.coldwallet.ui.activitys.CreateWalletActivity">
+
+    <include layout="@layout/layout_head"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#146db5"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密码用于保护私钥和交易授权，强度非常重要"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="codewallet 不存储密码，也无法帮您找回，请务必牢记"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circular_bead_white_10px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/create_wallet_name"/>
+
+            <EditText
+                android:id="@+id/et_wallet_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/hint_text_color"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="钱包名称"
+                android:lines="1"
+                android:maxLength="10"
+                android:textSize="@dimen/font_size14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/dialog_line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/create_wallet_pwd"/>
+
+            <EditText
+                android:id="@+id/et_wallet_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:textColorHint="@color/hint_text_color"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="6-16位字母、数字的密码"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="16"
+                android:textSize="@dimen/font_size14" />
+
+
+            <ImageView
+                android:id="@+id/pwd_display_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/pass_word_conceal"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/dialog_line_color"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/create_wallet_pwd"/>
+
+            <EditText
+                android:id="@+id/et_wallet_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/hint_text_color"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="重复密码"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="16"
+                android:textSize="@dimen/font_size14" />
+
+
+            <ImageView
+                android:id="@+id/repwd_display_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/pass_word_conceal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/create_wallet_hint"/>
+
+            <EditText
+                android:id="@+id/et_wallet_password_tip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/hint_text_color"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="密码提示信息(可不填)"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="16"
+                android:textSize="@dimen/font_size14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_tiaokuang_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_gou"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/gou_unselect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="我已经仔细阅读并同意"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_size12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/secret_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="服务及隐私条款"
+            android:textColor="@color/circular_bead_blue"
+            android:textSize="@dimen/font_size12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circular_bead_gray_10px"
+        android:enabled="false"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18" />
+
+</LinearLayout>

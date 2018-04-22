@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/currency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size16"
+                android:textColor="@color/white"
+                android:text="比特币"/>
+
+            <TextView
+                android:id="@+id/exchange_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/font_size12"
+                android:textColor="@color/market_text_color"
+                android:text="交易平台名称"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical"
+                android:gravity="right|center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size16"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/white"
+                        android:text="$"/>
+
+                    <TextView
+                        android:id="@+id/currency_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size16"
+                        android:textColor="@color/white"
+                        android:text="1415.76"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/font_size12"
+                        android:textColor="@color/market_text_color"
+                        android:text="￥"/>
+
+                    <TextView
+                        android:id="@+id/exchange_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/font_size12"
+                        android:textColor="@color/market_text_color"
+                        android:text="交易平台名称"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_limit"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:background="@drawable/market_drop_cricle_bg"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size11"
+                android:textColor="@color/white"
+                android:text="- 1.30%"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/halving_line"
+        style="@style/Line_H_Style"/>
+</LinearLayout>

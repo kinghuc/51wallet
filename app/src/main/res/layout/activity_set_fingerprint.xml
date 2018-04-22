@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head"/>
+
+    <LinearLayout
+        android:id="@+id/ll_continue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.carefree.coldwallet.commons.views.FingerPrinterView
+            android:id="@+id/fpv"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="150dp"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/font_size15"-->
+            <!--android:text="@string/please_set_your_continue"/>-->
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/circular_bead_blue_10px"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/font_size18"
+            android:text="@string/next_step"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_entering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/market_drop_text_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/font_size15"
+            android:text="@string/fingerprint_finish"/>
+    </LinearLayout>
+</LinearLayout>

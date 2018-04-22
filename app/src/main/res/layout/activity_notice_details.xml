@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head"/>
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="@dimen/font_size22"
+        android:textColor="@color/four_font_color"
+        android:text="关于比特币在国内的相关发展"/>
+
+    <TextView
+        android:id="@+id/notice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="@dimen/font_size14"
+        android:textColor="@color/hint_text_color"
+        android:text="2018-04-13"/>
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="20dp"
+        android:textSize="@dimen/font_size16"
+        android:textColor="@color/hint_text_color"
+        android:background="@drawable/circular_bead_white_30px"
+        android:text="关于比特币在国内的相关发展"/>
+</LinearLayout>

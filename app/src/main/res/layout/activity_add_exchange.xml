@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/circular_bead_white_10px">
+
+        <EditText
+            android:id="@+id/exchange_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="@dimen/font_size14"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:lines="1"
+            android:hint="@string/input_exchange_address"/>
+
+        <View
+            style="@style/Ge_Line_V_Style"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/exchange_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="@dimen/font_size14"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="29dp"
+            android:lines="1"
+            android:hint="@string/input_exchange_name"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/circular_bead_blue_10px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/add"/>
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.carefree.coldwallet.ui.activitys.TransferAccountsActivity">
+
+    <include layout="@layout/layout_head"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/circular_bead_white_10px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/font_size14"
+                android:text="@string/wallet_address"/>
+
+            <EditText
+                android:id="@+id/et_wallet_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/four_font_color"
+                android:textColorHint="@color/hint_text_color"
+                android:inputType="number"
+                android:background="@null"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:lines="1"
+                android:maxLength="16"
+                android:textSize="@dimen/font_size14"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/font_size14"
+            android:text="@string/transfer_amount"/>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/four_font_color"
+            android:textColorHint="@color/hint_text_color"
+            android:background="@null"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:lines="1"
+            android:maxLength="16"
+            android:textSize="@dimen/font_size14" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/font_size14"
+                android:text="@string/remarks"/>
+
+            <EditText
+                android:id="@+id/et_tip"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/four_font_color"
+                android:textColorHint="@color/hint_text_color"
+                android:background="@null"
+                android:lines="1"
+                android:maxLength="16"
+                android:textSize="@dimen/font_size14" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circular_bead_white_10px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cost_of_absenteeism_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/four_font_color"
+                android:textSize="@dimen/font_size14"
+                android:text="@string/cost_of_absenteeism"/>
+        </LinearLayout>
+
+        <com.carefree.coldwallet.commons.views.RangeSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            app:rsb_lineColorSelected="@color/circular_bead_blue"
+            app:rsb_thumbResId="@mipmap/seekbar_thumb_icon"
+            app:rsb_lineColorEdge="@color/hint_text_color"
+            app:rsb_cellMode="number"
+            app:rsb_seekBarMode="single"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="17dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/slow"
+                android:textColor="@color/four_font_color"
+                android:textSize="@dimen/font_size14"/>
+            <TextView
+                android:id="@+id/tv_kuangong_fei"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.00000012eth"
+                android:textColor="@color/circular_bead_blue"
+                android:textSize="@dimen/font_size14"/>
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/quick"
+                android:textColor="@color/four_font_color"
+                android:textSize="@dimen/font_size14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/circular_bead_blue_10px"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18" />
+
+</LinearLayout>

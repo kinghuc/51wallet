@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    </style>
+
+    <!-- 行情列表分割线 水平线条的样式 -->
+    <style name="Line_H_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/market_line</item>
+    </style>
+
+    <!-- 垂直线条的样式 -->
+    <style name="Line_V_Style">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dialog_line_color</item>
+    </style>
+
+    <!-- 垂直线条的样式 -->
+    <style name="Ge_Line_V_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/dialog_line_color</item>
+    </style>
+
+    <!--弹框样式-->
+    <style name="FullScreenDialog" parent="android:Theme.Dialog">
+        <!-- 窗口设为无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 窗口浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 全屏 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- 点击空白不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!--错误提示弹框-->
+    <style name="ErrorDialog" parent="android:Theme.Dialog">
+        <!-- 窗口设为无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 窗口浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 全屏 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- 点击空白不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!--导出私钥弹框-->
+    <style name="PrivateDialog" parent="android:Theme.Dialog">
+        <!-- 窗口设为无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 窗口浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/forge_pasaword_text_color</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 全屏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 点击空白不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--导航栏的颜色-->
+        <item name="colorPrimary">@color/circular_bead_blue</item>
+        <!--通知栏等的颜色-->
+        <item name="colorPrimaryDark">@color/circular_bead_blue</item>
+        <!--字体的主题颜色-->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--解决textView全局大小写问题-->
+        <item name="android:textAllCaps">false</item>
+        <!-- toolbar中带动画效果的箭头，设置动画形式与箭头颜色 -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- toolbar中menu的文字的颜色,并非溢出菜单的内容文字颜色 -->
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/pageInOut</item>
+    </style>
+
+    <!-- 左边的箭头指示-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style><!--自定义的固定宽高比-->
+
+    <!-- 页面跳转间的过渡动画 -->
+    <style name="pageInOut">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="ZxingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/result_view</item>
+        <item name="colorPrimaryDark">@color/result_view</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+
+</resources>

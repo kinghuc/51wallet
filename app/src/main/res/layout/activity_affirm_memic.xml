@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/four_font_color"
+        android:textSize="@dimen/font_size16"
+        android:text="@string/please_affirm_memic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_size14"
+        android:textColor="@color/hint_text_color"
+        android:text="@string/please_affirm_memic_content"/>
+
+    <TextView
+        android:id="@+id/affirm_menic"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circular_bead_white_10px"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:textSize="@dimen/font_size14" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="4"/>
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:background="@drawable/circular_bead_blue_10px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/sure"/>
+</LinearLayout>

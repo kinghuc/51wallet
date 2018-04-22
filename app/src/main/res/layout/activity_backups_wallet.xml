@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_head"/>
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/backups_wallet_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/four_font_color"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/last_setp_immediately_backups_wallet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color_9933333"
+        android:textSize="@dimen/font_size14"
+        android:text="@string/backups_wallet_explain"/>
+
+    <Button
+        android:id="@+id/immediately_backups_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/circular_bead_blue_10px"
+        android:text="@string/immediately_backups"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18" />
+</LinearLayout>

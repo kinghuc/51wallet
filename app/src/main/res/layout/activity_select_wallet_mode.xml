@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/select_wallet_mode_bg">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/wallet"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/main_market_no_select"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size14"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/text_color_999fdef6"
+        android:text="提示语"/>
+
+
+    <TextView
+        android:id="@+id/create_wallet"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="178dp"
+        android:background="@drawable/circular_bead_blue_10px"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/create_wallet"/>
+
+    <TextView
+        android:id="@+id/to_lead_wallet"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_bead_hollow_blue_10px"
+        android:textColor="@color/circular_bead_blue"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/font_size18"
+        android:text="@string/to_lead_wallet"/>
+</LinearLayout>
